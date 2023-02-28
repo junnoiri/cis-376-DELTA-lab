@@ -51,89 +51,36 @@
       </nav>
 
       <div class="row">
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Nulla malesuada pellentesque elit eget gravida cum. Aenean sed
-                adipiscing diam donec adipiscing. Arcu vitae elementum curabitur
-                vitae nunc sed velit dignissim sodales. Consequat mauris nunc
-                congue nisi vitae suscipit tellus mauris. Sit amet risus nullam
-                eget felis eget nunc lobortis mattis. A scelerisque purus semper
-                eget.
-              </p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="./styles/style.css" class="card-link"
-                >Another link to sytles</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">GitHub Link Demo</h4>
-              <p class="card-text">
-                Here is a guide on how to link to your REPO (Source Code) & your
-                APP (Deployment)
-              </p>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Cool Name Facts</h4>
+            <p class="card-text">gimme your name for some cool facts!</p>
 
-              <a
-                href="https://github.com/barrycumbie/effective-enigma"
-                class="card-link"
-                target="affiliate"
-                >View the REPO</a
-              >
+            <label for="userName" class="form-label">what ur name?</label>
+            <input
+              type="text"
+              id="userName"
+              class="form-control"
+              name="userName"
+            />
+            <button id="btnGetFacts" class="btn btn-secondary">
+              get cool facts
+            </button>
 
-              <a
-                href="https://barrycumbie.github.io/effective-enigma/"
-                target="affiliate"
-                class="card-link"
-                >View the APP</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Cool Name Facts</h4>
-              <p class="card-text">gimme your name for some cool facts!</p>
+            <br />
 
-              <label for="userName" class="form-label">what ur name?</label>
-              <input
-                type="text"
-                id="userName"
-                class="form-control"
-                name="userName"
-              />
-              <button id="btnGetFacts" class="btn btn-secondary">
-                get cool facts
-              </button>
-
-              <br />
-
-              <span id="coolNameFactsOutput"> </span>
-              <!-- <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a> -->
+            <div id="outputDiv" class="row">
+              <div class="col-md-4 offset-md-4">
+                <h1 id="outputMsg"></h1>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-          <span class="text-muted">Place sticky footer content here.</span>
-        </div>
-      </footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="./scripts/script.js"></script>
-    <script src="./scripts/fn-demo.js"></script>
   </body>
 </html>
